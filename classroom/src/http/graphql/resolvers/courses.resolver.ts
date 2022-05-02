@@ -47,7 +47,7 @@ export class CoursesResolver {
 
   @Mutation(() => Course)
   @UseGuards(AuthorizationGuard)
-  createCouse(@Args('data') data: CreateCourseInput) {
+  createCourse(@Args('data') data: CreateCourseInput) {
     return this.coursesService.createCourse(data);
   }
 }
